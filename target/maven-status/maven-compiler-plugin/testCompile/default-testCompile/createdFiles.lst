@@ -1,7 +1,6 @@
 ebay/runner/TestRunner.class
-ebay/user/pages/CartPage.class
 ebay/user/pages/HomePage.class
-ebay/user/pages/BasePage.class
 ebay/user/steps/EbaySteps.class
+ebay/user/pages/BasePage.class
 ebay/user/pages/MobilePhonesPage.class
 ebay/user/pages/ProductPage.class

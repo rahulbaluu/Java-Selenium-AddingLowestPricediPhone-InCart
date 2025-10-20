@@ -6,12 +6,14 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
+
 public class ProductPage extends BasePage {
     public ProductPage(WebDriver driver) {
         super(driver);
     }
 
     public void addToCart() {
+        // Handle tab switch if product opens in new tab
         for (String windowHandle : driver.getWindowHandles()) {
             driver.switchTo().window(windowHandle);
         }

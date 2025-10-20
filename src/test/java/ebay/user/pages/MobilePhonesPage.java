@@ -27,17 +27,16 @@ public class MobilePhonesPage extends BasePage {
 	}
 
 	public void addLowestPricedPhoneToCart() {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
-// Wait for all product cards to load
+		// Wait for all product cards to load
 		List<WebElement> phoneCards = wait.until(
 				ExpectedConditions.presenceOfAllElementsLocatedBy(
 						By.cssSelector("li.s-card")));
 
 		// Log for debugging
 		System.out.println("Phones found: " + phoneCards.size());
+		System.out.println(phoneCards.get(2).getText());
 		phoneCards.get(2).click();
-		// Handle tab switch if product opens in new tab
-
 	}
 }
